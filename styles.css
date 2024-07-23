@@ -54,14 +54,3 @@ footer {
         width: 100%;
     }
 }
-
-/* Estilos Específicos */
-.bg-gradient-about {
-    background: linear-gradient(to right, #00b4db, #0083b0); /* Gradiente de celeste a púrpura */
-    padding: 60px 0; /* Ajusta el padding según lo necesites */
-}
-
-/* Opcional: Si quieres ajustar el color del texto dentro de esta sección */
-.bg-gradient-about .text-center {
-    color: #fff; /* Cambia el color del texto a blanco para contrastar mejor */
-}

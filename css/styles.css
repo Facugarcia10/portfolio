@@ -97,7 +97,7 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
+  color: #000000
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
@@ -8081,7 +8081,7 @@ textarea.form-control-lg {
 
 .text-white {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  color: rgb(44 62 80) !important;
 }
 
 .text-body {
@@ -8091,7 +8091,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+    color: #f9f9f9 !important;
 }
 
 .text-black-50 {
@@ -10870,10 +10870,10 @@ html {
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
-  background-color: #fff;
+  background-color: #2c3e50;
 }
 .divider-custom.divider-light .divider-custom-icon {
-  color: #fff;
+  color: #2c3e50;
 }
 
 .btn-xl {
@@ -11047,23 +11047,23 @@ html {
 
 /* Estilo para el gradiente animado */
 /* Gradiente en movimiento */
-.gradient-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, #00aaff, #ff00aa, #aa00ff);
-    background-size: 600% 600%;
+/* Fondo con gradiente animado para la sección About */
+#about {
+    background: linear-gradient(45deg, #00bcd4, #9c27b0);
+    background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
-    z-index: -1; /* Asegúrate de que el gradiente esté detrás del contenido */
 }
 
-/* Animación del gradiente */
 @keyframes gradientAnimation {
-    0% { background-position: 0% 0%; }
-    50% { background-position: 100% 100%; }
-    100% { background-position: 0% 0%; }
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
 .about-section {
@@ -11129,4 +11129,12 @@ html {
 
 #sendMessageButton:hover {
     background-color: #0056b3;
+}
+
+.contact-section {
+    text-align: left;
+}
+
+.social-section {
+    text-align: right;
 }
