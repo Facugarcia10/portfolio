@@ -8125,9 +8125,24 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
 }
 
+/* Estilo para el gradiente en movimiento */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .bg-primary {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+    --bs-bg-opacity: 1;
+    background: linear-gradient(270deg, #00c6ff, #00d9b2, #00aaff, #007bff, #d0a8f2); /* Celeste, Turquesa, Aqua marino, Azul, Púrpura claro */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
 }
 
 .bg-secondary {
@@ -11049,9 +11064,9 @@ html {
 /* Gradiente en movimiento */
 /* Fondo con gradiente animado para la sección About */
 #about {
-    background: linear-gradient(45deg, #00bcd4, #9c27b0);
+    background: linear-gradient(270deg, #00c6ff, #00d9b2, #00aaff, #007bff, #d0a8f2);
     background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
 }
 
 @keyframes gradientAnimation {
