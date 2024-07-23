@@ -1,0 +1,67 @@
+/* Estilos Globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menú de Navegación */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Slider */
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Box de Comentarios de Redes Sociales */
+.social-comments .comment-box {
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+/* Fotos de Productos */
+.product-photos .product {
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Samp */
+.program-output samp {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.program-output samp:hover {
+    background-color: #d0e0ff;
+    color: #000080;
+    cursor: pointer;
+}
+
+/* Adaptación para Dispositivos Móviles */
+@media (max-width: 768px) {
+    .product {
+        width: 100%;
+    }
+}
+
+/* Estilos Específicos */
+.bg-gradient-about {
+    background: linear-gradient(to right, #00b4db, #0083b0); /* Gradiente de celeste a púrpura */
+    padding: 60px 0; /* Ajusta el padding según lo necesites */
+}
+
+/* Opcional: Si quieres ajustar el color del texto dentro de esta sección */
+.bg-gradient-about .text-center {
+    color: #fff; /* Cambia el color del texto a blanco para contrastar mejor */
+}
